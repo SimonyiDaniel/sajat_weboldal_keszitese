@@ -44,6 +44,7 @@ main {
     flex: 1;
     padding: 2rem;
     background: #f9f9f9;
+    height: 175vh;
 }
 .about-flex {
     display: flex;
@@ -54,6 +55,8 @@ main {
     margin-top: 2rem;
     background-color: rgb(224, 224, 224);
     margin-right: auto;
+    border-radius: 10px;
+
 }
 
 .about-flex img {
@@ -71,9 +74,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: sticky;
+    position: relative;
     bottom: 0;
     width: 100%;
+    
 }
 
 header{
