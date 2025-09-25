@@ -45,6 +45,26 @@ main {
     padding: 2rem;
     background: #f9f9f9;
 }
+.about-flex {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    background-color: rgb(224, 224, 224);
+    margin-right: auto;
+}
+
+.about-flex img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-flex .about-text {
+    max-width: 400px;
+}
 
 footer {
     background: #333;
