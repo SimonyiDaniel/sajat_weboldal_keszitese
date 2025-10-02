@@ -47,16 +47,15 @@ main {
     height: 175vh;
 }
 .about-flex {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    gap: 2rem;
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
     margin-top: 2rem;
     background-color: rgb(224, 224, 224);
-    margin-right: auto;
     border-radius: 10px;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 
 .about-flex img {
@@ -83,4 +82,47 @@ footer {
 header{
     font-family: 'Arial Black', sans-serif;
     font-size: 2rem;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+}
+
+article {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+}
+
+aside {
+    flex: 1;
+    width: 300px;
+}
+
+.aside-container {
+    background: #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+@media (max-width: 900px) {
+    .main-flex {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .about-flex {
+        max-width: 100%;
+    }
 }

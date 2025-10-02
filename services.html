@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="services.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css"/>
+    <title>Services</title>
 </head>
 <body>
     <header>
@@ -12,16 +13,30 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html"><i class="fa-thin fa-house"></i>Home</a></li>
+            <li><a href="about.html"><i class="fa-regular fa-user"></i>About</a></li>
+            <li><a href="services.html"><i class="fa-regular fa-notes-sticky"></i>Services</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>Üdvözöllek a weboldalomon</h2>
-        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Services" style="max-width:300px;display:block;margin:1rem auto;">
-        <p>viszlát</p>
-    </main>
+        <section class="info-panel">
+            <h2>Kérjük, adja meg az adatait</h2>
+            <form>
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Küldés</button>
+            </form>
+        </section>
+        <section class="appreciation-box">
+            <h3>Köszönjük, hogy ellátogattál!</h3>
+            <p>Nagyon értékeljük, hogy használod az oldalunkat. Reméljük, hogy minden információt megtalálsz, amire szükséged van!</p>
+        </section>
     <footer>
         <p>&copy; 2025 Az én weboldalam, minden jog fentartva</p>
     </footer>
